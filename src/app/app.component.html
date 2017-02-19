@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="alert alert-warning alert-dismissible" role="alert">
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     <strong><a href="http://codingthesmartway.com/courses/angular2-firebase" target="_blank">[ONLINE COURSE] - Angular 2 Firebase - Build a Web App with Typescript</a></strong> +++ Learn how to build a Web Application from A to Z using Angular 2, Firebase 3 and Typescript
+   </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://codingthesmartway.com">CodingTheSmartWay.com</a>
+      </div>
+      <div *ngIf="isLoggedIn">
+        <p class="navbar-text navbar-right">Logged In: {{user_displayName}} ({{user_email}})<p>
+      </div>
+      <div *ngIf="!isLoggedIn">
+        <p class="navbar-text navbar-right">Logged Out</p>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

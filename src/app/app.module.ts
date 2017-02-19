@@ -11,11 +11,11 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyBGpfQq3UfTxfjiiDwA_uMSXq0MVulLKtY",
-    authDomain: "ngfbauth.firebaseapp.com",
-    databaseURL: "https://ngfbauth.firebaseio.com",
-    storageBucket: "ngfbauth.appspot.com",
-    messagingSenderId: "762862261360"
+    apiKey: "<your-key>",
+    authDomain: "<your-project-authdomain>",
+    databaseURL: "<your-database-url>",
+    storageBucket: "<your-storage-bucket>",
+    messagingSenderId: "<your-messaging-sender-id>"
   };
 
 const routes: Routes = [
